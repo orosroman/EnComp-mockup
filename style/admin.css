@@ -1,0 +1,15 @@
+table td:first-child {
+	text-align: center;
+}
+
+th, td {
+	width: 25%;
+}
+
+table button {
+	width: 100%;
+}
+
+.table-responsive table {
+	margin-bottom: 20px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Energy Company - control panel</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+	<header>
+		<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 text-left va-center">
+						<span class="helper"></span><img src="img/logo.png">
+					</div><!--
+					--><div class="col-md-6 text-center va-center">
+						<h1>Енергетична компанія</h1>
+						<h4>Ми робимо майбутнє світлим!</h4>
+					</div><!--
+					--><div class="col-md-3 text-right va-center">
+						<ul class="nav nav-pills nav-stacked">
+							<li class="active"><a href="#">Історія показників</a></li>
+							<li><a href="calculation.html">Розрахунок оплати</a></li>
+							<li><a href="tariff.html">Тариф</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<h5 class="text-center">Історія показників</h5>
+		<div class="container">
+			<div class="well">
+				<div class="table-responsive">
+					<table class="table table-striped text-center">
+						<tr>
+							<th>Місяць</th>
+							<th class="text-center">Показник</th>
+							<th class="text-center">Статус</th>
+						</tr>
+						<tr>
+							<td>Жовтень, 15'</td>
+							<td>3010</td>
+							<td>Підтверджено</td>
+						</tr>
+						<tr>
+							<td>Листопад, 15'</td>
+							<td>3110</td>
+							<td>Підтверджено</td>
+						</tr>
+						<tr>
+							<td>Грудень, 15'</td>
+							<td>3210</td>
+							<td>Підтверджено</td>
+						</tr>
+						<tr>
+							<td>Січень, 16'</td>
+							<td>3310</td>
+							<td><button type="button" class="btn btn-danger">Підтвердити</button></td>
+						</tr>
+					</table>
+					<ul class="pager">
+						<li class="previous"><a href="#">Попередня</a></li>
+						<li class="next"><a href="#">Наступна</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h5 class="text-center">Внесення показника</h5>
+			<form class="form-inline text-center">
+				<div class="form-group">
+					<label for="indicator">Показник:</label>
+					<input id="indicator" class="form-control" name="value" type="number" min="0" required placeholder="Введіть показник">
+				</div>				
+				<button type="submit" class="btn btn-success">Внести</button>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<div class="jumbotron">
+			<p class="text-center">Copyright © 2017. All Rights Reserved | Енергетична компанія</p>
+		</div>
+	</footer>
+</body>
+</html>
